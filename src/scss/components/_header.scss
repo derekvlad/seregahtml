@@ -5,6 +5,7 @@
 
 .header-top{
   min-height: 101px;
+  opacity: .8;
   @media (max-width: (1200px)) {
     min-height: 101px;
     display: flex;
@@ -33,6 +34,7 @@
 }
 .header-top__inner{
   padding: 16px 0;
+  
 }
 .header__social-link, .header__social-link img{
   display: block;

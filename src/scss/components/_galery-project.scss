@@ -24,7 +24,7 @@
   width: 100%;
 
   .swiper-slide  img{
-    height: 837px;
+    height: 937px;
     @media (max-width: (1200px)) {
       height: 569px;
     }
@@ -71,10 +71,15 @@
 }
 .header-container{
   justify-content: flex-start;
-  padding-top: 75px;
-  @media (max-width: (760px)) {
-    padding-top: 35px;
+  padding-top: 212px;
+  
+}
+@media (max-width: (768px)) {
+  .header-container{
+    padding-top: 75px;
+    margin-top: 101px;
   }
+  
 }
 .header__img{
   margin-left: auto;

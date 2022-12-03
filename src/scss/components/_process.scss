@@ -55,6 +55,7 @@
     content: "";
     position: absolute;
     background-image: url("../img/arrow-process.png");
+    background-repeat: no-repeat;
     height: 77px;
     width: 186px;
     top: 64px;
@@ -65,12 +66,13 @@
     background-image: none;
   }
 
-  &-items__item:nth-child(3)::after {
-    background-image: none;
-  }
+  // &-items__item:nth-child(3)::after {
+  //   background-image: none;
+  // }
 
   &__item-img {
     margin-bottom: 31px;
+    max-width: 180px;
 
   }
 
@@ -190,9 +192,9 @@
     &-items__item::after {
       content: "";
       position: absolute;
-      background-image: url("../img/arrow-process.png");
-      height: 56px;
-      width: 160px;
+      background-image: url("../img/arrow-process-min.png");
+      height: 52px;
+      width: 125px;
       top: 50px;
       right: -90px;
     }
