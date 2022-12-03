@@ -1,0 +1,141 @@
+.project {
+  padding: 120px 0;
+  background-color: #dadde0;
+
+  &__title {
+    margin-bottom: 73px;
+  }
+
+  &-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 150px 150px 300px;
+    grid-gap: 10px;
+  }
+
+  &__items-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__items-item:first-child {
+    text-align: center;
+  }
+
+  &__item-title {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+
+  &__item-description {
+    margin-bottom: 30px;
+    font-family: "Bodoni72c";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #000000;
+  }
+
+  &__items-item:nth-child(2) {
+    grid-row: 1/4;
+    grid-column: 2;
+  }
+
+  &__items-item:nth-child(3) {
+    grid-row: 1/3;
+    grid-column: 3;
+  }
+
+  &__items-item:nth-child(4) {
+    grid-row: 2/4;
+    grid-column: 1;
+  }
+
+  &__items-item:nth-child(6) {
+    grid-row: 3/5;
+    grid-column: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .project {
+    &-items {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 300px 150px 150px 150px 150px 300px;
+    }
+
+    &__items-item:nth-child(2) {
+      grid-row: 2/4;
+      grid-column: 1;
+    }
+
+    &__items-item:nth-child(3) {
+      grid-row: 4/6;
+      grid-column: 1;
+    }
+
+    &__items-item:nth-child(4) {
+      grid-row: 6;
+      grid-column: 1;
+    }
+    &__items-item:nth-child(5) {
+      grid-row: 1/3;
+      grid-column: 2;
+    }
+
+    &__items-item:nth-child(6) {
+      grid-row: 3/5;
+      grid-column: 2;
+    }
+    &__items-item:nth-child(7) {
+      grid-row: 5/7;
+      grid-column: 2;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .project {
+    &-container {
+      padding: 0;
+    }
+    &__title {
+      margin-bottom: 25px;
+      font-size: 30px;
+      line-height: 37px;
+    }
+    &-items {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__items-item:nth-child(2) {
+      position: relative;
+    }
+
+    &__items-item:nth-child(1) {
+      padding-top: 80px;
+      padding-bottom: 100px;
+      position: absolute;
+      z-index: 10;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    &__items-item__body {
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      height: 250px;
+    }
+  }
+}

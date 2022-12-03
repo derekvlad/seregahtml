@@ -1,0 +1,119 @@
+.prices {
+  background-image: url("../img/prices-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+
+  &__title {
+    padding-top: 120px;
+    margin-bottom: 32px;
+  }
+
+  &-inner {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 90px 190px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__description {
+    font-family: 'Bodoni 72';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #000000;
+    width: 500px;
+  }
+
+  &__description-span {
+    font-weight: 700;
+  }
+}
+
+
+@media(max-width:768px) {
+  .prices {
+    background-image: url("../img/mobile/prices-bg-ipad.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 150vh;
+
+    &-container {
+      padding: 0;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &-inner {
+      display: block;
+      width: 100%;
+      padding-top: 45px;
+      padding-bottom: 60px;
+      margin: 0 auto;
+      text-align: center;
+
+    }
+
+    &__description {
+      margin-bottom: 25px;
+    }
+  }
+
+}
+
+@media(max-width:430px) {
+  .prices {
+    background-image: none;
+    height: 100vh;
+
+
+    &__title {
+      margin-bottom: 30px;
+      padding-top: 0;
+      font-size: 30px;
+      line-height: 37px;
+      letter-spacing: 0.12em;
+    }
+
+    &-inner {
+      width: 100%;
+      background-image: url("../../img/mobile/prices-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      margin: 0 auto;
+      text-align: center;
+
+    }
+
+    &-inner__mobile {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(2.5px);
+      display: block;
+      padding-top: 30px;
+      padding-bottom: 50px;
+
+      z-index: 10;
+    }
+
+    &__description {
+      margin-bottom: 25px;
+      width: 260px;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}

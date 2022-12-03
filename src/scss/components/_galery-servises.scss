@@ -1,0 +1,110 @@
+.servises-galery {
+  margin-bottom: 114px;
+
+  &__title {
+    padding-top: 120px;
+
+    margin-bottom: 73px;
+  }
+
+  &__wrapper-galery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 120px;
+    border-bottom: 1px solid #000;
+  }
+
+  &__img {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 224px;
+      height: 120px;
+      background-image: url(../img/servis-card1decor.webp);
+    }
+  }
+
+  &__wrapper-h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 70px;
+    letter-spacing: 0.06em;
+    position: relative;
+
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #000000;
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      width: 0%;
+      transition: width .3s ease-in-out;
+    }
+  }
+  &__wrapper-item {
+    max-width: 425px;
+    width: 100%;
+    min-height: 536px;
+
+    @media(max-width: 750px) {
+      min-height: inherit;
+    }
+
+    &:hover {
+      .servises-galery__img {
+        &::after {
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(../img/photo1661248207.jpg);
+          filter: blur(2px);
+        }
+        &::before{
+          background-image: url(../img/servis-card1decor.webp);
+        }
+
+      }
+
+}
+  }
+}
+
+
+@media (max-width:769px) {}
+@media (max-width:390px) {
+  .servises-galery {
+    margin-bottom: 75px;
+
+    &__title {
+      padding-top: 75px;
+      margin-bottom: 33px;
+    }
+
+    &__wrapper-galery {
+   display: block;
+    }
+    &__img {
+      margin-bottom: 34px;
+    }
+}
+
+}

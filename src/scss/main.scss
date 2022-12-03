@@ -1,0 +1,32 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "global";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/about";
+@import "./components/contacts";
+@import "./components/dreams";
+@import "./components/find";
+@import "./components/key";
+@import "./components/prices";
+@import "./components/process";
+@import "./components/project";
+@import "./components/servises";
+
+@import "./components/interior";
+
+@import "./components/galery-project";
+@import "./components/galery-project-filter";
+@import "./components/popup";
+@import "./components/galeryprojects";
+@import "./components/galery-servises"
+
+
+
+
+// тестовые стили, удалите их
+

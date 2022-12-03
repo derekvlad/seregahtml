@@ -1,0 +1,146 @@
+.dreams{
+
+  background-image: url("../img/dreams-cat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+  &-inner{
+    padding-top: 120px;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 95vh;
+    text-align: center;
+    @media (max-width: (1700px)) {
+      height: 966px;
+    }
+    @media (max-width: (850px)) {
+      height: 731px;
+    }
+    @media (max-width: (850px)) {
+      height: 355px;
+    }
+    @media (max-width: (530px)) {
+      padding-top: 51px;
+    }
+  }
+
+  &__title{
+    margin-bottom: 50px;
+    @media (max-width: (850px)) {
+      text-transform: none;
+      font-size: 60px;
+      margin-bottom: 19px;
+      font-style: normal;
+      line-height: 1.1;
+      letter-spacing: 0.06em;
+    }
+    @media (max-width: (650px)) {
+      font-size: 32px;
+    }
+  }
+
+}
+
+
+.dreams-wrapper{
+
+  background-color: #E0E3E5;
+  padding-top: 173px;
+
+  @media (max-width: (850px)) {
+    padding-top: 120px;
+  }
+  @media (max-width: (530px)) {
+    padding-top: 75px;
+  }
+
+  .dreams{
+
+    .modal__open-btn{
+      @media (max-width: (850px)) {
+        width: 209px;
+
+      }
+      @media (max-width: (650px)) {
+        width: 186px;
+      }
+      @media (max-width: (530px)) {
+        background-image: url(../img/dreams-btn2.png);
+        width: 186px;
+        height: 68px;
+        img{
+          display: none;
+        }
+      }
+    }
+
+position: relative;
+    &::before,
+    &::after{
+      content: "";
+      max-width: 1306px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      border-left: 2px solid #FFFFFF;
+      border-right: 2px solid #FFFFFF;
+z-index: 10;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::after{
+      border-bottom: 2px solid #FFFFFF;
+      bottom: -276px;
+      box-shadow: 0px 5px 6px rgb(0 0 0 / 25%);
+
+      @media (max-width: (1200px)) {
+        bottom: -303px;
+      }
+      @media (max-width: (850px)) {
+        bottom: -289px;
+      }
+      @media (max-width: (530px)) {
+        bottom: -405px;
+      }
+      @media (max-width: (350px)) {
+        bottom: -398px;
+      }
+
+    }
+
+
+
+    &::before{
+      border-top: 2px solid #FFFFFF;
+      top: -67px;
+      box-shadow: 0px 0px 2px rgb(0 0 0 / 25%);
+      @media (max-width: (1200px)) {
+        top: 21px;
+      }
+      @media (max-width: (350px)) {
+        top: 30px;
+      }
+    }
+    @media (max-width: (1350px)) {
+      &::before,
+      &::after{
+        width: calc(100% - 46px);
+      }
+    }
+    @media (max-width: (530px)) {
+      &::before,
+      &::after{
+        transform: translate(-50%, 0) scaleY(1.15);
+        transform-origin: bottom;
+      }
+    }
+
+
+
+  }
+}
+
+
+

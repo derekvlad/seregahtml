@@ -1,0 +1,78 @@
+
+
+  .hide{
+    opacity: 1;
+    animation-name: a1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    height: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+
+    width: 0;
+  }
+  .hide + .g-project-gorizont{
+    opacity: 1;
+    animation-name: a1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    height: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+
+    width: 0;
+  }
+
+
+.ghghhhggh{
+
+
+  .block-cover{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  nav ul li{
+    padding: 10px 40px 10px 0;
+    cursor: pointer;
+  }
+
+  .container{
+    max-width: 1200px;
+    margin: 50px auto;
+  }
+
+  .alizarin{
+    border: 3px solid #e74c3c;
+  }
+  .wisteria{
+    border: 3px solid #8e44ad;
+
+  }
+  .emerland{
+    border: 3px solid #2ecc71;
+
+  }
+  .sunflower{
+    border: 3px solid #2980b9;
+
+  }
+
+
+  @keyframes a1{
+    to {
+        opacity: 0;
+        min-height: 0;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+  }
+
+
+}
+

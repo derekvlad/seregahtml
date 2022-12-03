@@ -1,0 +1,180 @@
+.interior {
+  &__title {
+    margin-bottom: 55px;
+  }
+
+  &__title-span {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .swiper-slide{
+    height: calc((100% - 30px) / 2) !important;
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-grid-column>.swiper-wrapper {
+    flex-wrap: wrap;
+    flex-direction: row !important;
+  }
+  .swiper-pagination {
+    position: static;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 90px;
+  }
+  &__link {
+    display: none;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet{
+    background-image: url(../img/about-line-black.png);
+  }
+  .swiper-button-next img{
+    transform: translate(-50%, -50%);
+  }
+  .swiper-button-prev img{
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media (max-width: 769px) {
+  .interior {
+    padding-bottom: 50px;
+    border-bottom: 2px solid #000;
+
+    &__title {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    &__title-span {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    &__items {
+      display: block;
+    }
+
+    &__items-item {
+      margin-bottom: 45px;
+    }
+
+    &__link {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      cursor: pointer;
+    }
+  }
+}
+.swiper-pagination{
+  padding-top: 200px;
+}
+.slider-container2,
+.slider-container3 {
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((100% - 30px) / 2) !important;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}
+
+
+.mySwiper {
+  .swiper-wrapper{
+    .swiper-slide{
+      margin-top: 0 !important;
+      margin-bottom: 30px;
+      img{
+        width: 100%;
+      }
+    }
+
+  }
+
+  .swiper-pagination{
+    position: static;
+    padding-top: 0;
+  }
+}
+
+.interior-slider{
+  position: relative;
+  padding-top: 10px;
+}
+
+.wr-img-slide{
+
+  img{
+    display: block;
+  }
+}
+.wr-img-slide-active{
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.37)), url(A52_Living_Room_View02.jpg);
+    filter: blur(2px);
+
+  }
+  &::after{
+    content: attr(data-title);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+}
