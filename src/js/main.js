@@ -111,47 +111,47 @@ modalController({
 
 var country = {
 
-  alizarin:{
-      name: "<span class='interior__title-span'> Interior design / Project </span>/A&nbsp;11",
-      text: "Here 11 can be&nbsp;a&nbsp;text about this project…",
-      short_text: "A 11"
+  alizarin: {
+    name: "<span class='interior__title-span'> Interior design / Project </span>/A&nbsp;11",
+    text: "Here 11 can be&nbsp;a&nbsp;text about this project…",
+    short_text: "A 11"
   },
-  wisteria:{
+  wisteria: {
     name: "<span class='interior__title-span'> Interior design / Project </span>/A&nbsp;12",
     text: "Here 12 can be&nbsp;a&nbsp;text about this project…",
     short_text: "A 12"
   },
-  emerland:{
+  emerland: {
     name: "<span class='interior__title-span'> Interior design / Project </span>/A&nbsp;13",
     text: "Here 13 can be&nbsp;a&nbsp;text about this project…",
     short_text: "A 13"
   },
-  sunflower:{
+  sunflower: {
     name: "<span class='interior__title-span'> Interior design / Project </span>/A&nbsp;14",
     text: "Here 14 can be&nbsp;a&nbsp;text about this project…",
     short_text: "A 14"
   },
-  item5:{
+  item5: {
     name: "<span class='interior__title-span'> Interior design / Project </span>/A&nbsp;15",
     text: "Here 15 can be&nbsp;a&nbsp;text about this project…",
     short_text: "A 15"
   },
-  item6:{
+  item6: {
     name: "<span class='interior__title-span'> Interior design / Project </span>/A&nbsp;16",
     text: "Here 16 can be&nbsp;a&nbsp;text about this project…",
     short_text: "A 16"
   },
-  item7:{
+  item7: {
     name: "<span class='interior__title-span'> Interior design / Project </span>/A&nbsp;17",
     text: "Here 17 can be&nbsp;a&nbsp;text about this project…",
     short_text: "A 17"
   },
-  item8:{
+  item8: {
     name: "<span class='interior__title-span'> Interior design / Project </span>/A&nbsp;18",
     text: "Here 18 can be&nbsp;a&nbsp;text about this project…",
     short_text: "A 18"
   },
-  item9:{
+  item9: {
     name: "<span class='interior__title-span'> Interior design / Project </span>/A&nbsp;18",
     text: "Here 18 can be&nbsp;a&nbsp;text about this project…",
     short_text: "A 19"
@@ -183,7 +183,7 @@ navBlock.addEventListener("click", (event) => {
 
   let oarent_wr_img = event.target.closest(".wr-img-slide");
   oarent_wr_img.classList.add("wr-img-slide-active");
-  oarent_wr_img.dataset.title =  country[filterClass].short_text;
+  oarent_wr_img.dataset.title = country[filterClass].short_text;
   //console.log(filterClass);
 
 
@@ -405,13 +405,13 @@ for (let anchor of anchors) {
 const processHide = document.querySelector('.process__item-hide');
 const closeHide = document.querySelectorAll('.process__item-hide__btn')
 const cardsList = document.querySelector('.process-items');
-
+const openHide = document.querySelector(".process__item-caption--span")
 
 
 if (cardsList !== null) {
   cardsList.addEventListener('click', ({ target }) => {
     const modals = cardsList.querySelectorAll('.process__item-hide');
-    if (target.closest('.process-items__item')) {
+    if (target.closest('.process__item-caption--span')) {
       modals.forEach(modal => {
         modal.classList.remove('open');
       })
@@ -425,6 +425,12 @@ if (cardsList !== null) {
         modal.classList.remove('open');
       })
     }
+    if (target.closest(".process__item-hide__btn")) {
+      modals.forEach(modal => {
+        modal.classList.remove('open');
+      })  
+    }
+
   });
 
 }

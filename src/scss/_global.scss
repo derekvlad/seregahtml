@@ -9,6 +9,12 @@
   padding: 0 25px;
   max-width: 1500px;
 }
+@media(max-width:480px){
+  .container{
+    padding: 0 10px;
+  }
+ 
+}
 
 .title {
   font-family: "Bodoni72c";

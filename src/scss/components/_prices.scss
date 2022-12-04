@@ -23,9 +23,11 @@
     align-items: center;
     gap: 50px;
   }
-  &-inner__mobile{
+
+  &-inner__mobile {
     display: flex;
   }
+
   &__description {
     font-family: 'Bodoni 72';
     font-style: normal;
@@ -79,11 +81,12 @@
 
 }
 
-@media(max-width:430px) {
+@media(max-width:480px) {
   .prices {
-    background-image: none;
-    
-
+    min-height: 0;
+    max-height: 361px;
+    padding: 33px 0 54px;
+    position: relative;
 
     &__title {
       margin-bottom: 30px;
@@ -91,31 +94,66 @@
       font-size: 30px;
       line-height: 37px;
       letter-spacing: 0.12em;
-    }
-
-    &-inner {
-      width: 100%;
-      background-image: url("../../img/mobile/prices-mobile.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      margin: 0 auto;
-      text-align: center;
-
-    }
-
-    &-inner__mobile {
-      background: rgba(255, 255, 255, 0.7);
-      backdrop-filter: blur(2.5px);
-      display: block;
-      padding-top: 30px;
-      padding-bottom: 50px;
-
-      z-index: 10;
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     &__description {
+      margin: 0 auto;
       margin-bottom: 25px;
+    }
+  }
+
+  .prices-inner {
+    padding: 0;
+  }
+
+  .prices-inner__btn {
+    max-width: 175px;
+  }
+  .prices-inner{
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(2.5px);
+  }
+  .prices-inner__mobile {
+   
+    display: block;
+    padding: 26px 0;
+    z-index: 10;
+  }
+}
+
+@media(max-width:430px) {
+  .prices {
+
+
+
+    &__title {}
+
+    // &-inner {
+    //   width: 100%;
+    //   background-repeat: no-repeat;
+    //   background-size: cover;
+    //   background-position: center center;
+    //   margin: 0 auto;
+    //   text-align: center;
+
+    // }
+
+    // &-inner__mobile {
+    //   background: rgba(255, 255, 255, 0.7);
+    //   backdrop-filter: blur(2.5px);
+    //   display: block;
+    //   padding-top: 30px;
+    //   padding-bottom: 50px;
+
+    //   z-index: 10;
+    // }
+
+    &__description {
+
       width: 260px;
       font-size: 14px;
       line-height: 17px;
